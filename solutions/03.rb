@@ -1,6 +1,5 @@
 require 'bigdecimal'
 require 'bigdecimal/util'
-#TODO refactor/cleanup + use modules instead of utils if there's time
 class Product
   attr_reader :name, :price, :discount
   def initialize(name, price, discount)
