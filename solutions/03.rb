@@ -51,9 +51,6 @@ class OneFreeDiscount < BaseDiscount
   def apply(product, items_bought)
     @free_items = items_bought / @item_at
     res = @free_items * product.price
-    while @free_items / @item_at > 0
-      @free_items = @free_items / @item_at
-    end
     res
   end
 end
