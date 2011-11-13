@@ -19,20 +19,6 @@ class Product
     end
     result 
   end
-
-  private
-  def validate_name(product_name)
-    if product_name.length > 40
-      raise "Product name is too long"
-    end
-  end
-
-  def validate_price(product_price)
-    parsed_price = product_price.to_d
-    if parsed_price < 0.01 or parsed_price > 999.99
-      raise "Incorrect product price"
-    end
-  end
 end
 
 #kinda like a factory, but not really
